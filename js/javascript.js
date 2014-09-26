@@ -262,6 +262,6 @@ function switchPerson(cool) {
     
     currentPerson = cool;
 
-    $('#CSSstyle').attr('href', cool.name + '.css');
+    $('#CSSstyle').attr('href', '/css/' + cool.name + '.css');
     magic();
 }
