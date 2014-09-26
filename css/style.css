@@ -185,6 +185,8 @@ button:hover{
 button:active {
     border-top: 3px solid white;
     border-bottom-width: 3px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 #magic {
@@ -210,8 +212,11 @@ button:active {
 }
 
 .switchButton.active {
-   background-color: #56be6b;
+    background-color: #56be6b;
     border-bottom-color: #268b41;
+    border-top: 3px solid white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 #cssButtons .info p{
