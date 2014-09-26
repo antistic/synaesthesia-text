@@ -1,5 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
+<head>
+    <title>a thingy thing thing</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylee.css">
+    <link id="CSSstyle" rel="stylesheet" type="text/css" href="yachen.css">
+</head>
 <body>
-this is placeholder text
+       <div id="completeContainer">
+           <div id="leftContainer" class="sidebar">
+               <h1>About</h1>
+               <p>There is a <a href="http://en.wikipedia.org/wiki/Grapheme-color_synesthesia">common type of synesthesia</a> in which people perceive colours when they see certain letters or numbers or combinations of letters or numbers. <span class="txtspk">(if ur here u probs knew this already)</span></p>
+               <p>Basically this is a thing where you can see how certain people (i.e. Yachen and Surabi and Fiona and Su) see text.</p>
+               <p><span class="txtspk">(btw did you know that it's not straight up 'a' is always a certain colour. for example, some capital letters can be different, and sometimes whole words like 'monday'!!!)</span></p>
+           </div>
+           <div id="midContainer">
+               <textarea name="original" id="originalText" placeholder="Type your text into here"></textarea>
+               <button id="magic" name="magic" type="button" onclick="magic()">do some magic!</button>
+               <div id="textContainer">
+                   <div id="formattedText"></div>
+                   <div id="overlay"></div>
+               </div>
+               <div id="cssButtons">
+                   <button id="yachen" class="switchButton active" type="button" onclick="switchPerson(yachen)">Yachen</button>
+                   <button id="surabi" class="switchButton" type="button" onclick="switchPerson(surabi)">Surabi</button>
+                   <button id="fiona" class="switchButton" type="button" onclick="switchPerson(fiona)">Fiona</button>
+                   <button id="su" class="switchButton" type="button" onclick="switchPerson(su)">Su</button>
+                   <div class="info">
+                       <p>Click these buttons to switch between people! (it might take a few seconds BE PATIENT!!!!)</p>
+                   </div>
+               </div>
+           </div>
+           <div id="rightContainer" class="sidebar">
+               <h1>Options</h1>
+               <div id="options">
+                   <div id="background" onclick="changeBackground()">
+                       <h2>Background</h2>
+                       <label><input type="radio" name="background" value="white" checked="true">White</label>
+                       <label><input type="radio" name="background" value="black">Black</label>
+                       <label><input type="radio" name="background" value="grey">Grey</label>
+                       <label><input type="radio" name="background" value="rainbow">Obnoxious Rainbow Gif</label>
+                       <br />
+                       <label><input type="radio" name="background" value="other">Other </label><input type="text" name="background" placeholder="custom colour">
+                       <div class="info">
+                           <p>You can use <a href="http://www.colorpicker.com/">HEX colours</a> (e.g. #F00 or #FF0000) or <a href="http://www.htmlcolorname.com/">regular colour names</a> (e.g. red).<br><strong>default: </strong>#aaa (light grey)</p>
+                       </div>
+                   </div>
+                   <div id="effects" onclick="changeEffects()">
+                       <h2>"Pop" effects</h2>
+                       <label><input type="checkbox" name="effects" value="outline" checked="true"><span class="effectLabel">Outline</span></label><input type="text" name="outline" placeholder="custom colour">
+                       <label><input type="checkbox" name="effects" value="glow"><span class="effectLabel">Glow</span></label><input type="text" name="glow" placeholder="custom blur size">
+                       <label><input type="checkbox" name="effects" value="overlay"><span class="effectLabel">Overlay</span></label><input type="text" name="overlay" placeholder="custom opacity">
+                       <div class="info">
+                           <p>You can select multiple effects. I don't recommend using both the outline and black overlay options.</p>
+                           <p>You can use <a href="http://www.colorpicker.com/">HEX colours</a> (e.g. #F00 or #FF0000) or <a href="http://www.htmlcolorname.com/">regular colour names</a> (e.g. red). <br><strong>default: </strong>#aaa (light grey)</p>
+                           <p>Blur size is an integer (and measured in pixels). <br><strong>default: </strong>3px</p>
+                           <p>Opacity is a number between 0 and 1, where 0 is totally transparent and 1 is completely opaque. <br><strong>default: </strong>0.5</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
 </body>
 </html>
