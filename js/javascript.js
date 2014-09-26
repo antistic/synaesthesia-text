@@ -205,9 +205,13 @@ function changeEffects() {
         });
     }
 
-//    if ($('input[value="overlay"]:checked').length === 1) {
-//        $('#formattedText span').css('color', 'rgba(0, 0, 0, ' + opacity + ')');
-//    }
+    if ($('input[value="overlay"]:checked').length === 1) {
+        $('#overlay').css('color', 'rgba(0, 0, 0, ' + opacity + ')');
+        $('#overlay').css('display', 'inherit');
+    }
+    else {
+        $('#overlay').css('display', 'none');
+    }
 }
 
 function magic() {
@@ -215,12 +219,13 @@ function magic() {
     var text;
     
     $('#formattedText').empty();
+    $('#overlay').empty();
 
     text = $('#originalText').val();
     text = addColours(text);
 
     $('#formattedText').append('<p>' + text + '</p>');
-
+    $('#overlay').append($('#originalText').val());
     changeEffects();
 }
 
