@@ -231,6 +231,7 @@ function magic() {
 
 
 var currentPerson = yachen;
+
 $(document).ready(function () {
     'use strict';
 
@@ -270,3 +271,10 @@ function switchPerson(cool) {
     $('#CSSstyle').attr('href', '/css/' + cool.name + '.css');
     magic();
 }
+
+
+$(document).bind("keyup keydown", function(e){
+    if(e.ctrlKey && e.keyCode == 13){
+        magic();
+    }
+});
