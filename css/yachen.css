@@ -1,0 +1,173 @@
+/*LETTERS*/
+.aCol {
+	color: #DE000F;
+}
+
+.bCol {
+	color: #FFFB00;
+}
+
+.cCol {
+	color: #B3E5FF;
+}
+
+.dCol {
+	color: #F5E400;
+}
+
+.eCol {
+	color: #006AC7;
+}
+
+.fCol {
+	color: #5E0031;
+}
+
+.gCol {
+	color: #E0AC00;
+}
+
+.capGCol {
+	color: #57ED00;
+}
+
+.hCol {
+	color: #003B00;
+}
+
+.iCol {
+	color: #E6DEFC;
+}
+
+.jCol {
+	color: #070087;
+}
+
+.kCol {
+	color: #8B00CC;
+}
+
+.lCol {
+	color: #FDFFC7;
+}
+
+.mCol {
+	color: #BF1600;
+}
+
+.nCol {
+	color: #F0CC00;
+}
+
+.oCol {
+	color: #FFFFFF;
+}
+
+.pCol {
+	color: #001C70;
+}
+
+.qCol {
+	color: #280045;
+}
+
+.capQCol {
+    color: #FFFDED;
+}
+
+.rCol {
+	color: #FFBAD3;
+}
+
+.sCol {
+	color: #9C000A;
+}
+
+.tCol {
+	color: #000000;
+}
+
+.uCol {
+	color: #220087;
+}
+
+.vCol {
+	color: #6B000B;
+}
+
+.wCol {
+	color: #B53C00;
+}
+
+.xCol {
+	color: #260000;
+}
+
+.yCol {
+	color: #C800FF;
+}
+
+.zCol {
+	color: #84F000;
+}
+
+/*NUMBERS*/
+.num0Col {
+    color: #ffffff;   
+}
+
+.num1Col {
+    color: #000000;
+}
+
+.alt1Col {
+    color: #E6DEFC;
+}
+
+.num2Col {
+    color: #FFFB00;
+}
+
+.num3Col {
+    color: #FF1E00;
+}
+
+.num4Col {
+    color: #FF179E;
+}
+
+.num5Col {
+    color: #84F000;
+}
+
+.num6Col {
+    color: #008204;
+}
+
+.num7Col {
+    color: #140087;
+}
+
+.num8Col {
+    color: #FF0000;
+}
+
+.num9Col {
+    color: #F0CC00;
+}
+
+/*SPECIAL CHARACTERS*/
+/*çÇ*/
+.u00e7Col, .u00c7Col {
+	color: #B3E5FF;
+}
+
+/*ß*/
+.u00dfCol {
+    color: #FFD138;
+}
+
+/*üÜ*/
+.u00fcCol, .u00dcCol {
+    color: #290052;
+}
