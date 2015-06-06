@@ -265,12 +265,14 @@ function switchPerson(cool) {
     $('.switchButton').removeClass('active');
     $('#' + cool.name).addClass('active');
 
-    currentPerson = cool;
+    $('#formattedText').fadeTo(500, 0.1, function () {
+        currentPerson = cool;
+        $('#CSSstyle').attr('href', '/css/' + cool.name + '.css');
+        magic();
 
-    $('#CSSstyle').attr('href', '/css/' + cool.name + '.css');
-    magic();
+        $('#formattedText').fadeTo(750, 1);
+    });
 }
-
 
 $(document).bind("keyup keydown", function (e) {
     if (e.ctrlKey && e.keyCode == 13) {
