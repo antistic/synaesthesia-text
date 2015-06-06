@@ -175,18 +175,18 @@ function changeEffects() {
         opacity = $('input[type="text"][name="overlay"]').val();
 
     $('#formattedText span').removeAttr("style");
-    
+
     if ($('input[value="outline"]:checked').length === 1) {
-        
+
         // set outlineColour
         if (outlineColour === '') {
             outlineColour = '#aaa';
         }
         outlineColour = outlineColour.replace(' ', '');
-        
+
         // setting shadow
         shadow = outlineColour + ' 0 0 1px, 1px 0 0 ' + outlineColour + ', -1px 0 0 ' + outlineColour + ', 0 1px 0 ' + outlineColour + ', 0 -1px 0 ' + outlineColour;
-        $('#formattedText span').css('text-shadow', shadow);      
+        $('#formattedText span').css('text-shadow', shadow);
     }
 
     if ($('input[value="glow"]:checked').length === 1) {
@@ -196,7 +196,7 @@ function changeEffects() {
         if (blur === '') {
             blur = '3';
         }
-        $('#formattedText span').each( function () {
+        $('#formattedText span').each(function () {
             $(this).css(
                 'text-shadow',
                 shadow +
@@ -208,8 +208,7 @@ function changeEffects() {
     if ($('input[value="overlay"]:checked').length === 1) {
         $('#overlay').css('color', 'rgba(0, 0, 0, ' + opacity + ')');
         $('#overlay').css('display', 'inherit');
-    }
-    else {
+    } else {
         $('#overlay').css('display', 'none');
     }
 }
@@ -217,7 +216,7 @@ function changeEffects() {
 function magic() {
     'use strict';
     var text;
-    
+
     $('#formattedText').empty();
     $('#overlay').empty();
 
@@ -262,10 +261,10 @@ $(document).ready(function () {
 
 function switchPerson(cool) {
     'use strict';
-    
+
     $('.switchButton').removeClass('active');
     $('#' + cool.name).addClass('active');
-    
+
     currentPerson = cool;
 
     $('#CSSstyle').attr('href', '/css/' + cool.name + '.css');
@@ -273,8 +272,8 @@ function switchPerson(cool) {
 }
 
 
-$(document).bind("keyup keydown", function(e){
-    if(e.ctrlKey && e.keyCode == 13){
+$(document).bind("keyup keydown", function (e) {
+    if (e.ctrlKey && e.keyCode == 13) {
         magic();
     }
 });
