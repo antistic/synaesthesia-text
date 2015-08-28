@@ -1,7 +1,6 @@
-body {
-    font-size: 100%;
-    line-height: 1.6875;
-    font-family: Georgia;
+html {
+    font-size: medium;
+    font-family: PT Sans Narrow, Georgia, sans-serif;
 }
 
 #main {
@@ -18,8 +17,8 @@ h1 {
 #originalText,
 #colouredText {
     display: block;
-    width: 100%;
     height: 300px;
+    width: 100%;
 }
 
 #colourButton {
