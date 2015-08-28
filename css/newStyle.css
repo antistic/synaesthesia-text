@@ -1,6 +1,6 @@
 html {
     font-size: medium;
-    font-family: PT Sans Narrow, Georgia, sans-serif;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
 #main {
@@ -10,13 +10,18 @@ html {
 h1 {
     font-family: Pacifico, Serif;
     color: #486a81;
-    margin: auto;
+    margin: 0;
+    margin-bottom: 0.5em;
     text-align: center;
+    font-size: 1.9em;
 }
 
 #originalText,
 #colouredText {
     display: block;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 150%;
     height: 300px;
     width: 100%;
 }
