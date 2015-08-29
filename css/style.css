@@ -44,4 +44,5 @@ h1 {
 #colouredText
 {
     z-index: 2;
+    pointer-events: none;
 }
