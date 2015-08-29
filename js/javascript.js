@@ -32,8 +32,6 @@ function addColours(text) {
 
 // windowload
 $(window).load(function () {
-    $('#originalText').focus();
-
     autosize($('textarea'));
 
     $('#main').click(function () {
