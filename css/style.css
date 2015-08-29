@@ -63,3 +63,25 @@ h1
     word-wrap: break-word;
     pointer-events: none;
 }
+
+/* custom */
+#colours {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#colours div p:first-child{
+    float: left;
+}
+
+#colours div p:nth-child(2){
+    float: right;
+}
+
+#colours > div {
+    clear: both;
+}
+
+#colours div input, .sp-replacer{
+    margin-left: 1em;
+}
