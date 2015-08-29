@@ -85,3 +85,25 @@ h1
 #colours div input, .sp-replacer{
     margin-left: 1em;
 }
+
+.black, .white {
+    width: 1.5em;
+    display: inline-block;
+    margin: 0 0.5em;
+    text-align: center;
+    position: relative;
+    text-shadow: 0 0 3px;
+}
+
+.black {
+    text-shadow:
+        -3px -3px 15px black,
+        3px -3px 15px black,
+        -3px 3px 15px black,
+        3px 3px 15px black,
+        -3px -3px 15px black,
+        3px -3px 15px black,
+        -3px 3px 15px black,
+        3px 3px 15px black,
+        0 0 3px;
+}
