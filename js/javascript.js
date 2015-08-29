@@ -224,7 +224,7 @@ function magic() {
     text = addColours(text);
 
     $('#formattedText').append('<p>' + text + '</p>');
-    $('#overlay').append($('#originalText').val());
+    $('#overlay').append(text);
     changeEffects();
 }
 
