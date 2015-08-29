@@ -977,7 +977,7 @@
         var extraY = 0;
         var dpWidth = picker.outerWidth();
         var dpHeight = picker.outerHeight();
-//        var inputHeight = input.outerHeight();
+        var inputHeight = input.outerHeight();
         var inputWidth = input.outerWidth();
         var doc = picker[0].ownerDocument;
         var docElem = doc.documentElement;
