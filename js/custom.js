@@ -18,9 +18,7 @@ $(window).load(function () {
 
     $(".basic").spectrum({
         preferredFormat: "hex",
-        showInput: true,
-        showButtons: false,
-        allowEmpty: true
+        showInput: true
     });
 
 
