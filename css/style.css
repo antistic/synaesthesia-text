@@ -1,19 +1,36 @@
-html {
-    font-size: medium;
+html,
+body
+{
     font-family: Roboto, Helvetica, Arial, sans-serif;
-}
+    font-size: medium;
 
-#main {
-    padding: 0.5em;
-}
-
-h1 {
-    font-family: Pacifico, Serif;
-    color: #486a81;
+    width: 100%;
     margin: 0;
-    margin-bottom: 0.5em;
-    text-align: center;
+    padding: 0;
+}
+
+#main
+{
+    width: 100%;
+    padding: 0 10%;
+}
+
+#main *
+{
+    width: 80%;
+}
+
+h1
+{
+    font-family: Pacifico, Serif;
     font-size: 1.9em;
+
+    margin: 0;
+    margin-bottom: 1em;
+
+    text-align: center;
+
+    color: #486a81;
 }
 
 #main div
@@ -22,27 +39,38 @@ h1 {
 }
 
 #originalText,
-#colouredText {
-    display: block;
+#colouredText
+{
     font-family: Roboto;
+    font-size: 1.5em;
     font-weight: 500;
-    font-size: 150%;
 
     position: absolute;
     top: 0;
     left: 0;
 
-    height: 300px;
+    display: block;
+
     width: 100%;
+    min-height: 70vh;
+    margin: 0;
+    padding: 0;
+
+    border: none;
 }
 
 #originalText
 {
     z-index: 1;
+
+    outline: none;
+    box-shadow: none;
 }
 
 #colouredText
 {
     z-index: 2;
+
+    word-wrap: break-word;
     pointer-events: none;
 }
