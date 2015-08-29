@@ -75,7 +75,8 @@
     replaceInput = [
         "<div class='sp-replacer'>",
             "<div class='sp-preview'><div class='sp-preview-inner'></div></div>",
-            "<div class='sp-dd'>&#9660;</div>",
+        // downpointing 9660
+            "<div class='sp-dd'>&#9654;</div>",
         "</div>"
     ].join(''),
     markup = (function () {
@@ -976,13 +977,18 @@
         var extraY = 0;
         var dpWidth = picker.outerWidth();
         var dpHeight = picker.outerHeight();
-        var inputHeight = input.outerHeight();
+//        var inputHeight = input.outerHeight();
+        var inputWidth = input.outerWidth();
         var doc = picker[0].ownerDocument;
         var docElem = doc.documentElement;
         var viewWidth = docElem.clientWidth + $(doc).scrollLeft();
         var viewHeight = docElem.clientHeight + $(doc).scrollTop();
         var offset = input.offset();
-        offset.top += inputHeight;
+
+        // now showing it all to the RIGHT and not below
+//        offset.top += inputHeight;
+
+        offset.left += inputWidth + 5;
 
         offset.left -=
             Math.min(offset.left, (offset.left + dpWidth > viewWidth && viewWidth > dpWidth) ?
