@@ -53,13 +53,13 @@ h1
     outline: none;
     box-shadow: none;
     resize: vertical;
-    -webkit-text-fill-color: transparent;
 }
 
 #colouredText
 {
     z-index: 2;
-    text-shadow: 0 0 3px rgba(0,0,0,0.3);
+    text-shadow: 0 0 1px, 0 0 1px;
+    opacity: .85;
     word-wrap: break-word;
     pointer-events: none;
 }
