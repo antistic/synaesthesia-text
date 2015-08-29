@@ -52,6 +52,7 @@ h1
     z-index: 1;
     outline: none;
     box-shadow: none;
+    resize: vertical;
 }
 
 #colouredText
