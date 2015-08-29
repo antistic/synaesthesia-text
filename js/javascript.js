@@ -37,4 +37,25 @@ $(window).load(function () {
     $('#main').click(function () {
         $('#originalText').focus();
     });
+
+
+    // deals with tabs
+    $('#tabs li a').on('click', function (e) {
+        var currentTab = $(this).attr('href');
+        console.log(currentTab);
+
+        // Show/Hide Tabs
+//        $('.tab' + currentTab).siblings('.tab').fadeOut(500, function () {
+//            $('.tab' + currentTab).fadeIn(500).animate({
+//            top: "-=100%"
+//        }, 500);
+//        }).animate({
+//            top: "+=100%"
+//        }, 500);
+
+        // Change/remove current tab to active
+        $('.tab' + currentTab).addClass('active').siblings('.tab').removeClass('active');
+
+        e.preventDefault();
+    });
 });

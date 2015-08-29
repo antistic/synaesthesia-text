@@ -11,15 +11,24 @@
 </head>
 
 <body>
-    <div id="main">
+    <div id="about" class="tab">
+        <h1>About</h1>
+        <p>some filler text lorem ipsum blah etc and somereallylongwords and I don't know what to write.</p>
+        <p>This is a tool to show people what colours look like, by the way. Synaesthesia is a real thing! I don't have it! I don't know why I'm writing this! Hello, anyone who might read this. It's not ready, by the way. If it was, this text wouldn't be here.</p>
+    </div>
+    <div id="main" class="tab active">
         <h1>Synaesthesia Text</h1>
         <div>
             <textarea id="originalText" oninput="colourIt()" wrap="hard" placeholder="type anything here" autofocus="true"></textarea>
             <div id="colouredText"></div>
         </div>
-
-        <a href="custom.html">make your own colours</a>
     </div>
+
+    <ul id="tabs">
+        <li><a href="#about">About</a></li>
+        <li><a href="#main">Type Something</a></li>
+        <li><a href="custom.html">make your own colours</a></li>
+    </ul>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/autosize.min.js"></script>
