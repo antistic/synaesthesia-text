@@ -16,17 +16,32 @@ h1 {
     font-size: 1.9em;
 }
 
+#main div
+{
+    position: relative;
+}
+
 #originalText,
 #colouredText {
     display: block;
     font-family: Roboto;
     font-weight: 500;
     font-size: 150%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
     height: 300px;
     width: 100%;
 }
 
-#colourButton {
-    margin: 1em auto;
-    display: block;
+#originalText
+{
+    z-index: 1;
+}
+
+#colouredText
+{
+    z-index: 2;
 }
