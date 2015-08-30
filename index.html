@@ -6,8 +6,10 @@
 
     <meta name="viewport" content="initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/spectrum.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/yachen.css">
+    <style class="mainStyle"></style>
 </head>
 
 <body>
@@ -23,16 +25,27 @@
             <div id="colouredText"></div>
         </div>
     </div>
+    <div id="colours" class="tab">
+        <h1>so, what do you see?</h1>
+        <ul id="colourTabs">
+            <li><a href="#alphabet" class="active">alphabet</a></li>
+            <li><a href="#numbers">numbers</a></li>
+            <li><a href="#other">other characters</a></li>
+        </ul>
+        <div id="colourContainer"></div>
+    </div>
 
     <ul id="tabs">
         <li><a href="#about">About</a></li>
         <li><a href="#main">Type Something</a></li>
-        <li><a href="custom.html">make your own colours</a></li>
+        <li><a href="#colours">make your own colours</a></li>
     </ul>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/autosize.min.js"></script>
-    <script type="text/javascript " src="js/javascript.js "></script>
+    <script type="text/javascript" src="js/spectrum.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/javascript.js "></script>
 </body>
 
 </html>

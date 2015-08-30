@@ -103,29 +103,54 @@ h1 {
 
 /* custom */
 
-#colours {
+#colourTabs {
+    text-align: center;
+    border-bottom: 1px solid #486a81;
+    display: block;
+}
+
+#colourTabs li{
+    display: inline-block;
+    padding: 0.2em;
+}
+
+#colourTabs li a {
+    text-decoration: none;
+    color: #777;
+    margin: 0 3em;
+    border: 1px solid #486a81;
+    border-radius: 0.4em 0.4em 0 0;
+    padding: 0.2em 1.2em;
+}
+
+#colourTabs a.active {
+    border-bottom: 1px solid white;
+    color: #222;
+}
+
+#colourContainer {
     margin: 0 auto;
     max-width: 35em;
 }
 
-#colours div p {
+#colourContainer div p {
     margin: 0;
 }
 
-#colours div p:first-child {
+#colourContainer div p:first-child {
     float: left;
 }
 
-#colours div p:nth-child(2) {
+#colourContainer div p:nth-child(2) {
     float: right;
     padding-bottom: 2em;
 }
 
-#colours > div {
+#colourContainer > div {
     clear: both;
 }
 
-#colours div input,
+#colourContainer div input,
 .sp-replacer {
     margin-left: 1em;
 }
