@@ -44,7 +44,7 @@ function updateColour(picker, tinycolor) {
     colours[code] = colour;
     newStyle.append('.col' + code + '{color: ' + colours[code] + '}');
 
-    if (upperCheckbox.is(':checked')){
+    if (upperCheckbox.is(':checked')) {
         var upCode = upperCheckbox.attr("name")
         colours[upCode] = colour;
         newStyle.append('.col' + upCode + '{color: ' + colours[upCode] + '}');
@@ -53,9 +53,8 @@ function updateColour(picker, tinycolor) {
     $('head').append(newStyle);
 }
 
-// windowload
-$(window).load(function () {
-    var colourDiv = $('#alphabet');
+function createAlphabet(divName) {
+    var colourDiv = $(divName);
 
     colourDiv.empty();
 
@@ -81,6 +80,33 @@ $(window).load(function () {
 
         colourDiv.append(newhtml);
     }
+}
+
+function createNumbers(divName) {
+    var container = $(divName);
+
+    container.empty();
+
+    for (var i = 0; i <= 9; i++) {
+        var newhtml = $('<div></div>'),
+            number = i.toString(),
+            code = number.charCodeAt(0);
+
+        newhtml.append('<p>' +
+            '<span class="col' + code + ' black">' + number + '</span>' +
+            '<span class="col' + code + ' white">' + number + '</span>' +
+            '<input type="text" class="number spectrum" name="' + code + '" ' + ((code in colours) ? 'value="' + colours[code] + '"' : '') + '/>' +
+            '</p>');
+
+        container.append(newhtml);
+    }
+}
+
+// windowload
+$(window).load(function () {
+    createAlphabet('#alphabet');
+    createNumbers('#numbers');
+
 
     $(".spectrum").spectrum({
         preferredFormat: "hex",
@@ -90,7 +116,6 @@ $(window).load(function () {
             updateColour(this, tinycolor);
         }
     });
-
 
     $(".uppercase").spectrum({
         preferredFormat: "hex",
