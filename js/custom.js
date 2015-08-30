@@ -152,6 +152,9 @@ $(window).load(function () {
         allowEmpty: true,
         change: function (tinycolor) {
             updateColour(this, tinycolor);
+        },
+        hide: function (tinycolor) {
+            updateColour(this, tinycolor);
         }
     });
 
@@ -161,6 +164,9 @@ $(window).load(function () {
         allowEmpty: true,
         disabled: true,
         change: function (tinycolor) {
+            updateColour(this, tinycolor);
+        },
+        hide: function (tinycolor) {
             updateColour(this, tinycolor);
         }
     });
