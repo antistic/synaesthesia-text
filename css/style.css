@@ -105,7 +105,11 @@ h1 {
 
 #colours {
     margin: 0 auto;
-    width: 50%;
+    max-width: 35em;
+}
+
+#colours div p {
+    margin: 0;
 }
 
 #colours div p:first-child {
@@ -114,6 +118,7 @@ h1 {
 
 #colours div p:nth-child(2) {
     float: right;
+    padding-bottom: 2em;
 }
 
 #colours > div {
