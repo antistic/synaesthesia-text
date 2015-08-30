@@ -119,16 +119,17 @@ h1 {
 #colourTabs li {
     display: inline-block;
     padding: 0;
-    padding-bottom: 0.2em;
+    padding-bottom: 3px;
 }
 
 #colourTabs li a {
     margin: 0 1.5em;
-    padding: 0.2em 1.2em;
+    padding: 3px 1.2em;
     border: 1px solid #486a81;
     border-radius: 0.4em 0.4em 0 0;
     color: #777;
     text-decoration: none;
+    background-color: white;
 }
 
 #colourTabs li.active a {
@@ -167,7 +168,6 @@ h1 {
     margin-bottom: 3em;
     top: -1em;
     position: relative;
-
 }
 
 #alphabet div p {
