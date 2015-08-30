@@ -8,6 +8,17 @@ body {
     font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
+
+/*about*/
+
+.content {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+
+/*main*/
+
 #main {
     padding: 0 10%;
 }
@@ -178,11 +189,11 @@ h1 {
     text-shadow: -3px -3px 15px black, 3px -3px 15px black, -3px 3px 15px black, 3px 3px 15px black, -3px -3px 15px black, 3px -3px 15px black, -3px 3px 15px black, 3px 3px 15px black, 0 0 3px;
 }
 
-input[type=checkbox] + label{
+input[type=checkbox] + label {
     color: #888;
 }
 
-input[type=checkbox]:checked + label{
+input[type=checkbox]:checked + label {
     color: #000;
 }
 
