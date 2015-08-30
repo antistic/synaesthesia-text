@@ -40,7 +40,15 @@
         <div id="alphabet" class="colourContainer active"></div>
         <div id="numbers" class="colourContainer"></div>
         <div id="other" class="colourContainer"></div>
-        <div id="share" class="colourContainer"></div>
+        <div id="share" class="colourContainer">
+            <h3>Share your colours:</h3>
+            <p>Copy and paste the code below.</p>
+            <textarea id="export" onclick="this.select();"></textarea>
+            <h3>Use colours:</h3>
+            <p>Paste in the code and click Go!</p>
+            <textarea id="import" onclick="this.select();"></textarea>
+            <button onclick="importColours();">Go</button>
+        </div>
     </div>
 
     <ul id="tabs">

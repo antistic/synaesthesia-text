@@ -48,7 +48,7 @@ $(window).load(function () {
         e.preventDefault();
     });
 
-        // custom colour subtabs
+    // custom colour subtabs
     $('#colourTabs li a').on('click', function (e) {
         var currentTab = $(this).attr('href');
 
@@ -58,6 +58,10 @@ $(window).load(function () {
         // style tab links
         $('#colourTabs li').removeClass('active');
         $(this).parent().addClass('active');
+
+        // actions
+        updateExport();
+//        createStyles();
 
         e.preventDefault();
     });

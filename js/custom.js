@@ -102,6 +102,40 @@ function createNumbers(divName) {
     }
 }
 
+function updateSpectrumColours() {
+    $('.spectrum').each(function () {
+        var code = $(this).attr('name');
+//        console.log(code);
+        if (code in colours) {
+            $(this).spectrum('set', colours[code]);
+
+            // if uppercase...
+            if ((code > 65) && (code <= 90)) {
+                //  ...is the same colour as lowercase
+                if ((colours[code] === colours[parseInt(code, 10) + 32])) {
+                    $(this).siblings('[type=checkbox]').prop('checked', true);
+                    $(this).spectrum('disable');
+                } else {
+                    $(this).siblings('[type=checkbox]').prop('checked', false);
+                    $(this).spectrum('enable');
+                }
+            }
+        }
+    });
+}
+
+
+
+function updateExport() {
+    $('#export').val(btoa(JSON.stringify(colours)));
+}
+
+function importColours() {
+    colours = JSON.parse(atob($('#import').val()));
+    createStyles();
+    updateSpectrumColours();
+}
+
 // windowload
 $(window).load(function () {
     createAlphabet('#alphabet');
