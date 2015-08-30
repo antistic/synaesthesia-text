@@ -250,16 +250,16 @@
 
 /*SPECIAL CHARACTERS*/
 /*çÇ*/
-.u00e7Col, .u00c7Col {
+.col231, .col199 {
 	color: #B3E5FF;
 }
 
 /*ß*/
-.u00dfCol {
+.col223 {
     color: #FFD138;
 }
 
 /*üÜ*/
-.u00fcCol, .u00dcCol {
+.col252, .col220 {
     color: #290052;
 }

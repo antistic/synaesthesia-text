@@ -16,15 +16,16 @@ function addColours(text) {
     for (var i = 0, len = text.length; i < len; i++) {
         t = text[i];
         c = t.charCodeAt(0);
-        if ((c > 47 && c < 58) || (c > 64 && c < 91) || (c > 96 && c < 123)) {
-            // alphanumeric
-            colouredText += '<span class="col' + c + '">' + t + "</span>";
-        } else if (c == 10) {
+//        if ((c > 47 && c < 58) || (c > 64 && c < 91) || (c > 96 && c < 123)) {
+//            // alphanumeric
+//            colouredText += '<span class="col' + c + '">' + t + "</span>";
+//        } else
+        if (c == 10) {
             // linebreak
             colouredText += '<br>';
         } else if (!(c < 31) && !(c == 127)) {
-            // not a special char
-            colouredText += t;
+            // not a special char, though this probably misses a lot of the weird unicode ones
+            colouredText += '<span class="col' + c + '">' + t + "</span>";
         }
     }
     return (colouredText);
