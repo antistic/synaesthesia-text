@@ -131,7 +131,7 @@ h1 {
     text-decoration: none;
 }
 
-#colourTabs a.active {
+#colourTabs li.active a {
     border-bottom: 1px solid white;
     color: #222;
 }

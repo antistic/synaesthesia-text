@@ -43,8 +43,22 @@ $(window).load(function () {
         var currentTab = $(this).attr('href');
         console.log(currentTab);
 
-        // Change/remove current tab to active
+        // show/hide tab
         $('.tab' + currentTab).addClass('active').siblings('.tab').removeClass('active');
+
+        e.preventDefault();
+    });
+
+        // custom colour subtabs
+    $('#colourTabs li a').on('click', function (e) {
+        var currentTab = $(this).attr('href');
+        console.log(currentTab);
+
+        // show/hide tab TODO
+
+        // style tab links
+        $('#colourTabs li').removeClass('active');
+        $(this).parent().addClass('active');
 
         e.preventDefault();
     });
