@@ -55,7 +55,7 @@ function updateColour(picker, tinycolor) {
 
 // windowload
 $(window).load(function () {
-    var colourDiv = $('#colourContainer');
+    var colourDiv = $('#alphabet');
 
     colourDiv.empty();
 

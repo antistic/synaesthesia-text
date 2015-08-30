@@ -147,30 +147,35 @@ h1 {
     background-color: white;
 }
 
-#colourContainer {
+.colourContainer {
+    display: none;
+}
+
+.colourContainer.active {
+    display: block;
     margin: 0 auto;
     padding-top: 10em;
     max-width: 35em;
 }
 
-#colourContainer div p {
+#alphabet div p {
     margin: 0;
 }
 
-#colourContainer div p:first-child {
+#alphabet div p:first-child {
     float: left;
 }
 
-#colourContainer div p:nth-child(2) {
+#alphabet div p:nth-child(2) {
     float: right;
     padding-bottom: 2em;
 }
 
-#colourContainer > div {
+#alphabet > div {
     clear: both;
 }
 
-#colourContainer div input,
+.colourContainer div input,
 .sp-replacer {
     margin-left: 1em;
 }

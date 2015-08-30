@@ -41,7 +41,6 @@ $(window).load(function () {
     // deals with tabs
     $('#tabs li a').on('click', function (e) {
         var currentTab = $(this).attr('href');
-        console.log(currentTab);
 
         // show/hide tab
         $('.tab' + currentTab).addClass('active').siblings('.tab').removeClass('active');
@@ -52,9 +51,9 @@ $(window).load(function () {
         // custom colour subtabs
     $('#colourTabs li a').on('click', function (e) {
         var currentTab = $(this).attr('href');
-        console.log(currentTab);
 
-        // show/hide tab TODO
+        // show/hide tab
+        $('.colourContainer' + currentTab).addClass('active').siblings('.colourContainer').removeClass('active');
 
         // style tab links
         $('#colourTabs li').removeClass('active');
