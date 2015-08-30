@@ -13,25 +13,28 @@
 </head>
 
 <body>
-    <div id="about" class="tab">
+    <div id="about" class="tab animate">
         <h1>About</h1>
         <p>some filler text lorem ipsum blah etc and somereallylongwords and I don't know what to write.</p>
         <p>This is a tool to show people what colours look like, by the way. Synaesthesia is a real thing! I don't have it! I don't know why I'm writing this! Hello, anyone who might read this. It's not ready, by the way. If it was, this text wouldn't be here.</p>
     </div>
-    <div id="main" class="tab active">
+    <div id="main" class="tab active animate">
         <h1>Synaesthesia Text</h1>
         <div>
             <textarea id="originalText" oninput="colourIt()" wrap="hard" placeholder="type anything here" autofocus="true"></textarea>
             <div id="colouredText"></div>
         </div>
     </div>
-    <div id="colours" class="tab">
-        <h1>so, what do you see?</h1>
-        <ul id="colourTabs">
-            <li><a href="#alphabet" class="active">alphabet</a></li>
-            <li><a href="#numbers">numbers</a></li>
-            <li><a href="#other">other characters</a></li>
-        </ul>
+    <div id="colours" class="tab fadein">
+        <div class="header">
+            <h1>so, what do you see?</h1>
+            <ul id="colourTabs">
+                <li><a href="#alphabet" class="active">alphabet</a></li>
+                <li><a href="#numbers">numbers</a></li>
+                <li><a href="#other">other characters</a></li>
+                <li><a href="#share">share your colours</a></li>
+            </ul>
+        </div>
         <div id="colourContainer"></div>
     </div>
 
