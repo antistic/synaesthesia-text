@@ -1,3 +1,6 @@
+/* exported toggleSame, updateExport, importColours */
+/*global $ */
+
 var colours = {};
 
 function toggleSame(checkbox) {
@@ -45,7 +48,7 @@ function updateColour(picker, tinycolor) {
     newStyle.append('.col' + code + '{color: ' + colours[code] + '}');
 
     if (upperCheckbox.is(':checked')) {
-        var upCode = upperCheckbox.attr("name")
+        var upCode = upperCheckbox.attr("name");
         colours[upCode] = colour;
         newStyle.append('.col' + upCode + '{color: ' + colours[upCode] + '}');
     }
@@ -57,6 +60,7 @@ function createAlphabet(divName) {
     var colourDiv = $(divName);
 
     colourDiv.empty();
+    colourDiv.append('<button onclick="$(' + "'" + '#defaultStyle' + "'" + ').remove();">Clear Default Colours</button>');
 
     for (var i = 65; i <= 90; i++) {
         var newhtml = $('<div></div>'),
@@ -105,7 +109,7 @@ function createNumbers(divName) {
 function updateSpectrumColours() {
     $('.spectrum').each(function () {
         var code = $(this).attr('name');
-//        console.log(code);
+
         if (code in colours) {
             $(this).spectrum('set', colours[code]);
 

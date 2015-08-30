@@ -158,6 +158,18 @@ h1 {
     max-width: 35em;
 }
 
+#alphabet {
+    text-align: center;
+}
+
+#alphabet > button {
+    margin: 0 auto;
+    margin-bottom: 3em;
+    top: -1em;
+    position: relative;
+
+}
+
 #alphabet div p {
     margin: 0;
 }
