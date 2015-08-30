@@ -76,7 +76,7 @@ $(window).load(function () {
             '<span class="col' + upperC + ' black">' + upper + '</span>' +
             '<span class="col' + upperC + ' white">' + upper + '</span>' +
             '<input type="text" class="uppercase spectrum" name="' + upperC + '" ' + ((upperC in colours) ? 'value="' + colours[upperC] + '"' : '') + '/>' +
-            '<input type="checkbox" checked="true" onclick="toggleSame(this);" name="' + upperC + '" data-lowercase="' + lowerC + '"/>Same as lowercase' +
+            '<input type="checkbox" checked="true" onclick="toggleSame(this);" name="' + upperC + '" data-lowercase="' + lowerC + '"/><label>Same as lowercase</label>' +
             '</p>');
 
         colourDiv.append(newhtml);
