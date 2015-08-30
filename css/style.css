@@ -214,6 +214,17 @@ input[type=checkbox]:checked + label {
     color: #000;
 }
 
+#share textarea {
+    width: 100%;
+    resize: both;
+}
+
+#share button {
+    width: 10em;
+    margin: 0 auto;
+    display: block;
+}
+
 
 /* animate */
 
