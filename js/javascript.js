@@ -18,7 +18,7 @@ function addColours(text) {
         c = t.charCodeAt(0);
         if ((c > 47 && c < 58) || (c > 64 && c < 91) || (c > 96 && c < 123)) {
             // alphanumeric
-            colouredText += '<span class="' + t + 'Col">' + t + "</span>";
+            colouredText += '<span class="col' + c + '">' + t + "</span>";
         } else if (c == 10) {
             // linebreak
             colouredText += '<br>';
