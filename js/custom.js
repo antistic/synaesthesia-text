@@ -57,53 +57,59 @@ function updateColour(picker, tinycolor) {
 }
 
 function createAlphabet(divName) {
-    var colourDiv = $(divName);
+    var colourDiv = $(divName),
+        newhtml = $();
 
     colourDiv.empty();
     colourDiv.append('<button onclick="$(' + "'" + '#defaultStyle' + "'" + ').remove();">Clear Default Colours</button>');
 
     for (var i = 65; i <= 90; i++) {
-        var newhtml = $('<div></div>'),
+        var newdiv = $('<div></div>'),
             lowerC = (i + 32).toString(),
             lower = String.fromCharCode(i + 32),
             upperC = i.toString(),
             upper = String.fromCharCode(i);
 
-        newhtml.append('<p>' +
+        newdiv.append('<p>' +
             '<span class="col' + lowerC + ' black">' + lower + '</span>' +
             '<span class="col' + lowerC + ' white">' + lower + '</span>' +
             '<input type="text" class="lowercase spectrum" name="' + lowerC + '" ' + ((lowerC in colours) ? 'value="' + colours[lowerC] + '"' : '') + '/>' +
             '</p>');
 
-        newhtml.append('<p>' +
+        newdiv.append('<p>' +
             '<span class="col' + upperC + ' black">' + upper + '</span>' +
             '<span class="col' + upperC + ' white">' + upper + '</span>' +
             '<input type="text" class="uppercase spectrum" name="' + upperC + '" ' + ((upperC in colours) ? 'value="' + colours[upperC] + '"' : '') + '/>' +
             '<input type="checkbox" checked="true" onclick="toggleSame(this);" name="' + upperC + '" data-lowercase="' + lowerC + '"/><label>Same as lowercase</label>' +
             '</p>');
 
-        colourDiv.append(newhtml);
+        newhtml = newhtml.add(newdiv);
+
     }
+
+    colourDiv.append(newhtml);
 }
 
 function createNumbers(divName) {
-    var container = $(divName);
+    var container = $(divName),
+        newhtml = $();
 
     container.empty();
 
     for (var i = 0; i <= 9; i++) {
-        var newhtml = $('<div></div>'),
+        var newdiv = $('<div></div>'),
             number = i.toString(),
             code = number.charCodeAt(0);
 
-        newhtml.append('<p>' +
+        newdiv.append('<p>' +
             '<span class="col' + code + ' black">' + number + '</span>' +
             '<span class="col' + code + ' white">' + number + '</span>' +
             '<input type="text" class="number spectrum" name="' + code + '" ' + ((code in colours) ? 'value="' + colours[code] + '"' : '') + '/>' +
             '</p>');
 
-        container.append(newhtml);
+        newhtml = newhtml.add(newdiv);
     }
+    container.append(newhtml);
 }
 
 function updateSpectrumColours() {
